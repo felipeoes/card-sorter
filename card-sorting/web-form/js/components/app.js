@@ -99,8 +99,8 @@ var app = new Vue({
         animateStep: true,
     },
     created: function(){
-        // this.SCRIPT_URL = `https://script.google.com/macros/a/${ this.getParameterByName("gs") }/dev`;
-        this.SCRIPT_URL = `https://script.google.com/macros/a/${ this.getParameterByName("gs") }/exec`;
+        // this.SCRIPT_URL = `https://script.google.com/macros/s/${ this.getParameterByName("gs") }/dev`;
+        this.SCRIPT_URL = `https://script.google.com/macros/s/${ this.getParameterByName("gs") }/exec`;
 
         this.authenticated.userName = window.localStorage.getItem("userName") || this.authenticated.userName;
         this.setOriginalStack()
